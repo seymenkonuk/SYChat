@@ -11,11 +11,7 @@ Sunduğu özellikler:
 - Ortak anahtar belirlemek için Diffie-Hellman kullanma
 - Anahtarları dosya olarak dışarı aktarma ve dosyayı içeri aktarma
 
-![](tutorial/diffie_hellman.gif)
-
-![](tutorial/file_encryption.gif)
-
-![](tutorial/file_decryption.gif)
+https://github.com/user-attachments/assets/55979807-d6a3-412f-9cf0-d9f0a3e9688f
 
 ## İçindekiler
 <ol>
