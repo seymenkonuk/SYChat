@@ -1,0 +1,2 @@
+/build/**/*.min.js linguist-generated=false
+/build/**/*.js linguist-vendored=false
