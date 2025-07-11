@@ -2,46 +2,53 @@
 	"manifest_version": 3,
 	"name": "SYChat",
 	"description": "SYChat ile Whatsapp mesajlarınızı daha güvenli hale getirin!",
-	"version": "0.8.0",
-
+	"version": "1.0.0",
 	"action": {
 		"default_icon": "icon.png",
 		"default_popup": "popup/index.html"
 	},
-
 	"icons": {
 		"16": "icon.png",
 		"48": "icon.png",
 		"128": "icon.png"
 	},
-	
 	"content_scripts": [
 		{
-			"matches": ["https://web.whatsapp.com/"],
+			"matches": [
+				"https://web.whatsapp.com/"
+			],
 			"js": [
-				"lib/crypto-js.min.js", 
+				"lib/crypto-js.min.js",
 				"content-wrapper.min.js"
 			],
-			"css": ["content.min.css"]
+			"css": [
+				"content.min.css"
+			]
 		}
 	],
-
 	"background": {
 		"service_worker": "background.min.js"
 	},
-
 	"web_accessible_resources": [
 		{
-			"matches": ["https://web.whatsapp.com/*"],
-			"resources": ["img/upload.png"],
+			"matches": [
+				"https://web.whatsapp.com/*"
+			],
+			"resources": [
+				"img/upload.png"
+			],
 			"use_dynamic_url": true
 		},
 		{
-			"matches": ["https://web.whatsapp.com/*"],
-			"resources": ["content.min.js", "src/*"]
+			"matches": [
+				"https://web.whatsapp.com/*"
+			],
+			"resources": [
+				"content.min.js",
+				"src/*"
+			]
 		}
 	],
-	
 	"permissions": [
 		"storage",
 		"notifications"
